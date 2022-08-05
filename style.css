@@ -1,0 +1,771 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* --------------------Index---------------------- */
+
+#DRtopnav {
+  text-align:center;
+  height:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color:white;
+}
+
+#DRtopnav a{
+  text-decoration: none;
+  color:black;
+}
+
+#DRtopnav a:hover{
+  text-decoration: underline;
+  color:black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.jzdiv1{
+    width: 100vw;
+    height: 7vh;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jzdiv2{
+    position: relative;
+}
+
+.jzul1{
+    position: absolute;
+    border: 3px solid #171717;
+    list-style: none;
+    width: 10vw;
+    height: 17.5vh;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0;
+    
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.jzdiv2 button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px)
+}
+
+.jzul1 > li{
+    font-weight: bold;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: white;
+    border-bottom: 2px solid #171717;
+    border-radius: 5px;
+}
+
+.jzul1 > li > a{
+    color: #171717;
+    text-decoration: none;
+}
+
+.jzdiv1 > a > button{
+    border: none;
+    height: 6vh;
+    width: 10vw;
+    color: white;
+    background-color: #171717;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.jzdiv2 > button{
+    border: none;
+    height: 6vh;
+    width: 10vw;
+    color: white;
+    background-color: #171717;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.jzdiv1 > a > button{
+    color: white;
+    text-decoration: none;
+   border: 3px solid transparent;
+}
+
+.jzdiv2 > button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+   border-bottom: 3px solid white;
+
+}
+
+.jzdiv2 > button:hover{
+    background-color:white;
+    color:black;
+    cursor: pointer;
+}
+
+.jzdiv2 > button:focus{
+    background-color:white;
+    color:black;
+    cursor: pointer;
+}
+
+.jzdiv1 > a > button:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+/*
+.DRnav ul {
+  list-style: none;
+  background-color: #171717;
+  text-align: center; 
+  height: 65px;  
+  
+}
+.DRnav li {
+  font-size: 1.5em;
+  line-height: 40px;
+  height: 40px;
+  margin-right:50px;
+}
+ 
+.DRnav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.DRnav a:hover {
+  background-color: white;
+  color:black;
+}
+
+ .DRnav li {
+    display: inline-block;
+}
+
+.DRnav img{
+  float: left;
+  height:65px;
+  margin-left:20px;
+}
+*/
+#DRcenterDiv{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+
+#DRcenterDiv div {
+ margin: 0 5px;
+}
+
+#DRcenterDivText{
+  width:33%;
+  text-align:left;
+  margin-left:35px;
+  font-size:20px;
+}
+#DRcenterDivText h1{
+  text-align:left;
+}
+#DRcenterDivImage1{
+  width:30%;
+  height:30%;
+  overflow:none
+}
+#DRcenterDivImage2{
+  width:30%;
+  height:30%;
+  overflow:none
+}
+
+#DRcenterDivImage1 img{
+  width:100%;
+  height:100%;
+}
+
+#DRcenterDivImage2 img{
+  width:100%;
+  height:100%; 
+}
+
+#DRcenterDiv button{
+  width:30%;
+  height:50px;
+  background-color:#171717;
+  color:white;
+}
+
+#DRcenterDiv button:hover{
+  background-color:white;
+  color:black;
+  cursor: pointer;
+}
+
+#DRcenterDiv button:active{
+  background-color:darkgray;
+  color:white;
+}
+
+#DRbrandlogonavdiv{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:#E0E0E0;
+  padding: 15px 15px;
+}
+#DRbrandlogonavdiv div{
+  width:15%;
+  height:auto;
+  border: 4px solid black;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 30px 5px;
+}
+
+#DRbrandlogonavdiv div:hover{
+  border: 4px solid #171717;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: -30px 5px #171717;
+}
+
+#DRbrandlogonavdiv img{
+  width:100%;
+  height:100%;
+}
+
+
+#DRbrandDiv{
+  display:flex;
+  justify-content: center;
+  padding:10px;
+}
+
+#DRbrandDiv div{
+    text-align:center;
+    display:inline-block; 
+    margin: 0 5px;
+    width:32%;
+    height:30%;
+}
+#DRbrandDiv img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+#DRbrandDiv img:hover {
+  border:2px solid black;
+  filter: saturate(1.5);
+  
+}
+
+
+
+#DRbrandDiv .DRtexta {
+  color:black;
+  text-decoration: none;
+  border-bottom:1px solid black;
+  font-size:1.3em;
+}
+#DRbrandDiv .DRtexta:hover {
+  border-bottom:3px solid black;
+  font-weight:bold;
+}
+
+
+
+#DRfooter{
+  background-color:#171717;
+  color:white;
+  height:20%;
+  margin-top:30px;
+}
+
+#DRfooterlinks{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+#DRfooterlinks ul{
+  text-align:left;
+}
+
+#DRfooterlinks li{
+  margin: 10px 0;
+}
+
+#DRfooterlinks li a {
+  text-decoration: none;
+  color:gray;
+}
+#DRfooterlinks li a:hover {
+  color:white;
+}
+#DRfooterlogodiv{
+  margin: 10px;
+}
+
+#DRfooterlogodiv a{
+  margin-right:15px;
+}
+
+#DRbottomfooter{
+  display:flex;
+  background-color:#141414;
+  color:white;
+  height:50px;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+  bottom:0;
+}
+
+#DRbottomfooter div{
+  margin:15px 15px;
+}
+
+#DRbottomfooter img{
+  width:50px;
+  height:40px;
+
+}
+
+.DRfooterlinksheader{
+   margin-top:2%;
+}
+.DRfooterlinksheader ul{
+  list-style:none;
+}
+
+
+.DRlinebreak{
+  width:50px;
+  height:5px;
+  background-color:red;
+  margin-top:5px;
+}
+
+
+/* --------------------Login---------------------- */
+
+.jzbody1{
+   background-image: url("Images/JC/background.jpg");
+}
+
+.JZmaindiv{
+  margin:auto;
+  width:60%;
+  background-color: white;
+  border: 2px solid black;
+  margin-bottom: 12.7%;
+  height: 40vh;
+}
+
+.JZmaindiv button{
+  width:17%;
+  height:50px;
+  background-color:#171717;
+  color:white;
+}
+
+.JZmaindiv button:hover{
+  background-color:white;
+  color:black;
+  cursor: pointer;
+}
+
+.JZmaindiv button:active{
+  background-color:darkgray;
+  color:white;
+}
+
+.JZmaindiv > h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.JZmaindiv > form >input{
+  margin-bottom: 10px;
+}
+
+.JZmaindiv > form{
+  margin-bottom: 50px;
+}
+/* --------------------Items---------------------- */
+.jldiv1{
+  height:350px;
+  width: 1000px;
+  position: relative;
+  text-align: center;
+  left: 15%;
+  right:15%;
+  bottom: 15%;
+  top: 2%;
+  
+}
+.jlbox:hover .jloverlay{
+  opacity:1;
+}
+.jlbox{
+    background-color: white;
+    border: 2px purple;
+    width:30px;
+    height:50px;
+    float :right;
+    margin-right:8%;
+    margin-bottom:5%;
+    margin-left: 20% ;
+
+}
+.jlboxm{
+    width:30px;
+    height:50px;
+    float: center;
+    
+    
+}
+.jlDiv {
+  border: 1px outset red ;
+  background-color: ;    
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.des{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    width: 300px;
+}
+ 
+.jlsidenav a:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .jlsidenav {padding-top: 15px;}
+  .jlsidenav a {font-size: 18px;}S
+}
+* {
+  box-sizing: border-box;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+  top: 15;
+}
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 20px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.jldiv2{
+  background-color: black;
+  width:2000px;
+  height: 100px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 5vw;
+  color: white;
+}
+.jldiv2 img{
+  float:left;
+  top: 3%;
+  left: 3%;
+  background-color: black;
+}
+.jlimage{
+  display: block;
+  width: 100%;
+  height:auto;
+}
+.jloverlay{
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+}
+.jltext{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* --------------------Signup---------------------- */
+
+#dyForm {
+  font-family: 'Oswald', sans-serif;
+  border-style: solid;
+  border-width: 3px;
+  display: inline-block;
+  padding: 20px;
+}
+
+#dyButton {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border: 1px solid black;
+
+}
+
+#dyDIV {
+  /*
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  */
+  margin:auto;
+  width:60%;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#dyBody {
+  background-image: url("Images/JC/background.jpg");
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+input[type=password] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+
+/* --------------------Contact---------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.JCbody{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.JCcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.JCcontainer:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Images/JC/background.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.JCcontact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19) ;
+}
+
+.JCleft{
+    height: 100%;
+    background: url("Images/JC/background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.JCright {
+    padding: 25px 40px;
+}
+
+.JCh2 {
+    position: relative;
+    padding-bottom: 10px ;
+    margin-bottom: 10px;
+}
+
+.JCh2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: red ;
+}
+
+.JCfield{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.JCfield:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.JCfield:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.JCbtn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.JCbtn:hover {
+    background-color: darkred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
